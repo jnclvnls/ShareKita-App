@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "ShareKita",
+    "slug": "sharekita",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "newArchEnabled": false,
+    "ios": {
+      "bundleIdentifier": "com.example.sharekita",
+      "infoPlist": {
+        "NSCameraUsageDescription": "ShareKita scans a QR code to pair with a nearby device.",
+        "NSLocalNetworkUsageDescription": "ShareKita transfers files directly to nearby devices on your Wi-Fi network."
+      }
+    },
+    "android": {
+      "package": "com.example.sharekita",
+      "permissions": [
+        "INTERNET",
+        "ACCESS_WIFI_STATE",
+        "ACCESS_NETWORK_STATE",
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "ShareKita scans a QR code to pair with a nearby device."
+        }
+      ],
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e87d1b48-c51f-47be-9296-a074e0468c50"
+      }
+    }
+  }
+}
